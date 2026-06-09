@@ -72,6 +72,43 @@ npm run dev
 
 4. Open browser at `http://localhost:3000`
 
+### Building for Production
+
+```bash
+npm run build
+```
+
+The build output will be in the `dist/` directory.
+
+### Deploying to GitHub Pages
+
+#### Method 1: Automatic Deployment (Recommended)
+
+The project includes a GitHub Actions workflow that automatically deploys to GitHub Pages when you push to the `main` branch.
+
+**Setup Steps:**
+
+1. Go to your GitHub repository settings
+2. Navigate to **Settings** → **Pages**
+3. Under **Source**, select **GitHub Actions**
+4. Push your code to the `main` branch
+5. The workflow will automatically build and deploy your app
+6. Your app will be available at: `https://<username>.github.io/practice/`
+
+#### Method 2: Manual Deployment
+
+```bash
+npm run deploy
+```
+
+This will build the app and deploy it to the `gh-pages` branch.
+
+**Important:** Make sure to update the `base` property in `vite.config.js` if your repository name is different from "practice":
+
+```javascript
+base: '/your-repo-name/',
+```
+
 ### Demo Accounts
 
 **Regular User:**
