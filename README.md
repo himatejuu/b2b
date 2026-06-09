@@ -103,10 +103,10 @@ npm run deploy
 
 This will build the app and deploy it to the `gh-pages` branch.
 
-**Important:** Make sure to update the `base` property in `vite.config.js` if your repository name is different from "practice":
+**Important:** Make sure to update the `base` property in `vite.config.js` to match your repository name:
 
 ```javascript
-base: '/your-repo-name/',
+base: '/b2b/',  // Change this if your repo name is different
 ```
 
 ### Demo Accounts
